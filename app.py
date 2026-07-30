@@ -13,9 +13,9 @@ import streamlit as st
 
 
 #======================== APi'KEYS ===================================
-GOOGLE_KEY = st.sidebar.text_input("GEMINI",type="password")
-GROQ_KEY = st.sidebar.text_input("GROQ",type="password")
-TAVILY_KEY =st.sidebar.text_input("TAVILY",type="password")
+GOOGLE_API_KEY = st.sidebar.text_input("GEMINI",type="password")
+GROQ_API_KEY = st.sidebar.text_input("GROQ",type="password")
+TAVILY_API_KEY =st.sidebar.text_input("TAVILY",type="password")
 
 os.environ["GOOGLE_API_KEY"] = GOOGLE_KEY
 os.environ["GROQ_API_KEY"] = GROQ_KEY
