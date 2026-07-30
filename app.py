@@ -135,7 +135,7 @@ with tab2:
   st.header("check latest news")
   if st.button("Fetch news: "):
     with st.spinner("Running agent.."):
-      prompt = """give latest news india or word wind related 
+      prompt = """give latest news india or word news related 
       to tech, business, jobs, or user required output
       in proper HTML news templates""" + user_query
 
@@ -145,5 +145,23 @@ with tab2:
 
       st.html(code, width="stretch",
               unsafe_allow_javascript=True)
+      
+with tab3:
+   st.header("Create PPT")
+  if st.button("Click to generate: "):
+    with st.spinner("Running agent.."):
+      final_propmt = prompt_generate(model,user_query)
+
+       response = agent.invoke({'messages':[{'role':"user",
+                                            "content":final_prompt}]})
+      
+      code = response['messages'][-1].content[-1]['text]
+      st.html(code, width="stretch",
+              unsafe_allow_javascript=True)
+      st.download_button(label="Download PPT",
+          data=code,
+          file_name="ppt.html",
+          mime="text/html")
+
 
       
