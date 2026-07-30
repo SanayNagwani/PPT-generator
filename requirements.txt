@@ -1,7 +1,10 @@
-streamlit
 langchain
-pytesseract
-langchain_groq
 langchain_google_genai
+langchain_groq
+tavily-python
+pytesseract
+streamlit
+pandas
 numpy
-tavily
+matplotlib
+seaborn
