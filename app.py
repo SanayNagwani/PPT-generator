@@ -113,6 +113,9 @@ def prompt_generator(model, query):
     f.write(final_prompt)
   return final_prompt
 
+
+if all(API
+       
 agent = create_agent(
     model = model,
     tools = [search_latest_info,
