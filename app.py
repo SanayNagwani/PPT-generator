@@ -158,7 +158,7 @@ if all(ALL_API) and user-query:
       with st.spinner("Running agent.."):
         final_propmt = prompt_generate(model,user_query)
   
-         response = agent.invoke({'messages':[{'role':"user",
+        response = agent.invoke({'messages':[{'role':"user",
                                               "content":final_prompt}]})
         
         code = response['messages'][-1].content[-1]['text']
