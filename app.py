@@ -86,7 +86,7 @@ tab1, tab2, tab3 = st.tab(["GENERATE IMAGE",
 
 
 #===================ADVANCE ========================
-                          # detailed prompt generator
+  # detailed prompt generator
 def prompt_generator(model, query):
   prompt = f"""your task is to give detailed prompt instructions
   for given
@@ -114,7 +114,7 @@ def prompt_generator(model, query):
   return final_prompt
 
 
-if all(API
+if all(ALL_API) and user-query:
        
 agent = create_agent(
     model = model,
