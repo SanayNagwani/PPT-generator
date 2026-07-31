@@ -153,7 +153,7 @@ if all(ALL_API) and user-query:
                 unsafe_allow_javascript=True)
         
   with tab3:
-     st.header("Create PPT")
+    st.header("Create PPT")
     if st.button("Click to generate: ", key = "generate_ppt_button"):
       with st.spinner("Running agent.."):
         final_propmt = prompt_generate(model,user_query)
