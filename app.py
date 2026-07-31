@@ -80,9 +80,9 @@ def generate_image(img_prompt):
 
 
 #With tabs
-tab1, tab2, tab3 = st.tab(["GENERATE IMAGE",
+tab1, tab2, tab3 = st.tabs(["GENERATE IMAGE",
                           "CHECK LATEST NEWS",
-                          "GENERATIVE PPT"])
+                          "GENERATE PPT"])
 
 
 #===================ADVANCE ========================
