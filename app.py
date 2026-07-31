@@ -28,11 +28,13 @@ if not all(ALL_API):
   st.sidebar.error("PASS API_KEYS")
 
 elif all(ALL_API):
-   # step 1: model call
   model = ChatGoogleGenerativeAI(
       model = "gemini-3.5-flash-lite",
       google_api_key = GOOGLE_API_KEY
   )
+   # step 1: model call
+
+elif all(ALL_API):
   st.sidebar.info("MUST PASS ALL API KEYS")
 
 else:
