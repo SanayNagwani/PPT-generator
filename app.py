@@ -76,7 +76,7 @@ def generate_image(img_prompt):
       f.write(content)
     
     from PIL import Image
-    return Image.open("Image.jpeg")
+    return url
 
 
 #With tabs
