@@ -158,7 +158,7 @@ if all(ALL_API) and user_query:
     st.header("Create PPT")
     if st.button("Click to generate: ", key = "generate_ppt_button"):
       with st.spinner("Running agent.."):
-        final_propmt = prompt_generate(model,user_query)
+        final_propmt = prompt_generator(model,user_query)
   
         response = agent.invoke({'messages':[{'role':"user",
                                               "content":final_prompt}]})
