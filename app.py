@@ -116,12 +116,11 @@ def prompt_generator(model, query):
 
 if all(ALL_API) and user-query:
        
-    agent = create_agent(
-        model = model,
-        tools = [search_latest_info,
-                 generate_image
-                 ]
-    )
+  agent = create_agent(
+      model = model,
+      tools = [search_latest_info,
+                generate_image]
+                )
   
   #==================DISPLAY AGENT===================
   #st.sidebar.image(agent)
@@ -139,8 +138,9 @@ if all(ALL_API) and user-query:
   
   with tab2:
     st.header("check latest news")
-    if st.button("Fetch news: "):
+    if st.button("Fetch news: ", key = "news_button"):
       with st.spinner("Running agent.."):
+        
         prompt = """give latest news india or word news related 
         to tech, business, jobs, or user required output
         in proper HTML news templates""" + user_query
