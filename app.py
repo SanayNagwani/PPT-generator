@@ -22,7 +22,7 @@ os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 os.environ["TAVILY_API_KEY"] = TAVILY_API_KEY
 
 
-ALL_API = [GOOGLE_KEY, GROQ_KEY, TAVILY_KEY]
+ALL_API = [GOOGLE_API_KEY, GROQ_API_KEY, TAVILY_API_KEY]
 
 if not all(ALL_API):
   st.sidebar.error("PASS API_KEYS")
