@@ -33,7 +33,7 @@ elif all(ALL_API):
       google_api_key = GOOGLE_API_KEY
   )
   
-   st.sidebar.success("API KEYS LOADED SUCCESSFULLY")
+  st.sidebar.success("API KEYS LOADED SUCCESSFULLY")
 
 elif any(ALL_API):
   st.sidebar.info("MUST PASS ALL API KEYS")
