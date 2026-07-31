@@ -42,7 +42,7 @@ else:
   st.info("LOADED")
 
 
-=================== front end =============================
+#=================== front end =============================
 st.title("AI-AGENT-POWERED PPT GENERATOR")
 
 user_query = st.text_area("Write your ppt topic or prompt: ")
