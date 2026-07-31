@@ -39,10 +39,7 @@ elif any(ALL_API):
   st.sidebar.info("MUST PASS ALL API KEYS")
 
 else:
-  st.sidebar.success("API KEYS LOADED SUCCESSFULLY")
-  
-
- 
+  st.info("LOADED")
 
 
 =================== front end =============================
