@@ -82,7 +82,7 @@ def generate_image(img_prompt):
 #With tabs
 tab1, tab2, tab3 = st.tab(["GENERATE IMAGE",
                           "CHECK LATEST NEWS",
-                          "GENERATIVE PPT"]
+                          "GENERATIVE PPT"])
 
 
 #===================ADVANCE ========================
@@ -124,7 +124,7 @@ if all(ALL_API) and user-query:
     )
   
   #==================DISPLAY AGENT===================
-  st.sidebar.image(agent)
+  #st.sidebar.image(agent)
   
   #================WITH TABS========================
   with tab1:
