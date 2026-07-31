@@ -114,7 +114,7 @@ def prompt_generator(model, query):
   return final_prompt
 
 
-if all(ALL_API) and user-query:
+if all(ALL_API) and user_query:
        
   agent = create_agent(
       model = model,
