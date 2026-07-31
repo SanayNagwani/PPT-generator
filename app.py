@@ -154,7 +154,7 @@ if all(ALL_API) and user-query:
         
   with tab3:
      st.header("Create PPT")
-    if st.button("Click to generate: "):
+    if st.button("Click to generate: ", key = "generate_ppt_button"):
       with st.spinner("Running agent.."):
         final_propmt = prompt_generate(model,user_query)
   
@@ -164,10 +164,10 @@ if all(ALL_API) and user-query:
         code = response['messages'][-1].content[-1]['text']
         st.html(code, width="stretch",
                 unsafe_allow_javascript=True)
-        st.download_button(label="Download PPT",
+        if st.download_button(label="Download PPT",
             data=code,
             file_name="ppt.html",
-            mime="text/html")
+            mime="text/html"):
   
   
-        st.success("PPT downloaded Successfully!!")
+          st.success("PPT downloaded Successfully!!")
